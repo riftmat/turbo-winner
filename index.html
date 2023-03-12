@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darts score calculator</title>
+    <link rel="stylesheet" href="indes.css">
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bullseye.png" alt="Logo of the page">
+</head>
+<body>
+    <div class="all" id="alll">
+
+        <div class='pointsSlc'>
+            <label>
+                <p>Wybierz ilość punktów</p>
+                <select id="sl">
+                    <option value='101'>101</option>
+                    <option value='301'>301</option>
+                    <option value='501'>501</option>
+                    <option value='701'>701</option>
+                    <option value='1001'>1001</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="cointa">
+            <div class='players'>
+                <input type="text" placeholder="Wpisz imię gracza" id="playerName" class="playerName">
+                <button id="add" class="add">Dodaj gracza</button>
+                <div class="alertOne" id="alertOne"></div>
+                <div class="playersList" id="playersList"></div>
+            </div>
+            <button id="start" class="start">Rozpocznij grę</button>
+        </div>
+
+    </div>
+
+    <div class="alertTwo" id="alertTwo">
+        
+    </div>
+    
+    <div class="po" id="po">
+
+    </div>
+</body>
+</html>
