@@ -1,4 +1,4 @@
-# turbo-winner
+# Turbo-winner
 Darts calculator app
 
 # Description
