@@ -50,7 +50,7 @@ select {
     width: 85px;
     height: 75px;
     background: #7C7C7C;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 20px 0px 0px;
     margin-left: 20px;
     font-style: normal;
     font-weight: 500;
@@ -204,8 +204,8 @@ li {
     width: 170px;
     height: 45px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 800;
+    font-size: 18px;
     line-height: 21px;
     display: flex;
     align-items: center;
@@ -287,4 +287,22 @@ li {
     display: flex;
     text-align: center;
     justify-content: center;
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+}
+
+  
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
