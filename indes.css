@@ -182,9 +182,8 @@ li {
 .po {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 15%;
-    margin-right: 20%;
     max-width: 85%;
 }
 
@@ -297,6 +296,14 @@ li {
 
 @media only screen and (max-width: 1055px) {
 
+    .po {
+        width: 80%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
     .pointsSlc {
         width: 60%;
     }
@@ -349,9 +356,7 @@ li {
     }
 
     .alertOne {
-        position: relative;
-        top: 0;
-        margin-top: 2%;
+        margin-top: 12%;
     }
 }  
 
@@ -420,7 +425,37 @@ li {
         margin-top: 5vh;
         font-size: 12px;
         height: 4.5vh;
+    }
 
+    .alertOne {
+        font-size: 12px;
+        margin-top: 6vh;
+        width: 100%;
+    }
+
+    .po {
+        max-width: unset;
+    }
+
+    .pp {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .userName {
+        font-size: 12px;
+        height: 6vh;
+        width: 30vw;
+    }
+
+    .slN {
+        font-size: 12px;
+        height: 6vh;
+        width: 40vw;
+    }
+
+    .winDiv {
+        font-size: 12px;
     }
 
 }

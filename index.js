@@ -34,7 +34,6 @@ function addPlayer() {
             alertOne.innerHTML = "";
         }, 2000);
     };
-    
 };
 
 add.addEventListener("click", addPlayer);
@@ -56,7 +55,7 @@ start.addEventListener("click", () => {
     if(arr.length > 0) {
         for(let i = 0; i < arr.length; i++) {
             po.innerHTML += 
-            "<div class='pp'>" + 
+            "<div class='pp' id='pp"+ i +"'>" + 
                 "<p class='userName'>" + arr[i].innerHTML + "</p>" + 
                 "<div class='winDiv'>Liczba zwycięstw:<p class='win' id='win"+ i +"'>0</p></div>" +
                 "<div class='slN'>" +
@@ -68,6 +67,7 @@ start.addEventListener("click", () => {
 
         all.innerHTML = "";
         alertOne.innerHTML = "";
+        let winner = '';
         
         for(let i = 0; i < arr.length; i++) {
             let poin = document.getElementById(arr[i].innerHTML + i); // points left to gain for each player
@@ -84,7 +84,7 @@ start.addEventListener("click", () => {
                 }
 
                 if(inpu.value == Number(poin.innerHTML)) {
-                    alertTwo.innerHTML = "Wygrałeś! Gratulacje";
+                    alertTwo.innerHTML = "Wygrywa " + arr[i].innerHTML + " !";
                     const win = document.getElementById("win"+i);
                     win.innerHTML = Number(win.innerHTML) + 1;
                     setTimeout(()=> {
@@ -95,7 +95,6 @@ start.addEventListener("click", () => {
                             pointArr[i].innerHTML = sl.value;
                         }
                     }, 2500);
-                    
                 };
 
                 setTimeout(() => {
