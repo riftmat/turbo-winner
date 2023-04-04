@@ -3,7 +3,7 @@ Darts calculator app
 
 # Description
 
-Up to 10 players can use it at the same time, I'm planning to add automatic player switch, more wining conditions, mobile look and more advanced winning alert.
+Up to 10 players. I'm planning to add automatic player switch, more wining conditions and more advanced winning alert.
 
 # Screenshoot
 <img src="https://user-images.githubusercontent.com/118370365/224560264-d2881263-a828-4883-82d5-8b9f050e97e8.png">
