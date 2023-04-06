@@ -67,7 +67,6 @@ start.addEventListener("click", () => {
 
         all.innerHTML = "";
         alertOne.innerHTML = "";
-        let winner = '';
         
         for(let i = 0; i < arr.length; i++) {
             let poin = document.getElementById(arr[i].innerHTML + i); // points left to gain for each player
@@ -79,8 +78,15 @@ start.addEventListener("click", () => {
                     poin.innerHTML = poin.innerHTML;
                 }
 
-                if(inpu.value < Number(poin.innerHTML)) {
+                if(inpu.value < Number(poin.innerHTML) && inpu.value < 181) {
                     poin.innerHTML = Number(poin.innerHTML) - inpu.value;
+                }
+
+                if(inpu.value > 180) {
+                    alertTwo.innerHTML = "Wpisałeś zbyt dużą liczbę!"
+                    setTimeout(() => {
+                        alertTwo.innerHTML = ""
+                    }, 2500);
                 }
 
                 if(inpu.value == Number(poin.innerHTML)) {
